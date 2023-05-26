@@ -1,0 +1,185 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+:root{
+    --rose-color:rgb(230,95,120);
+}
+section{
+    padding: 80px 0px;
+}
+
+.img-icon{
+    width: 40px;
+    height: 30px;
+    padding-right: 7px;
+}
+.navbar-dark .navbar-nav .nav-link.active , .navbar-nav .nav-link:hover{
+    color: var(--rose-color);
+    font-weight: 900;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: var(--rose-color);
+}
+#home .layer{
+    background: url(../images/slideshow-2.jpg) no-repeat fixed center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.navbar .img-icon{
+    color: var(--rose-color);
+}
+
+
+
+
+#home .scroll{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+#home .scroll::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    
+    animation: circle 1s linear infinite;
+    
+    
+}
+@keyframes circle{
+    0%{
+top:5px;
+    }
+    50%{
+        top:8px;
+    }
+    100%{
+        top:5%px;
+    }
+}
+ 
+.setting{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 99;
+    background-color: black;
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 0 5px 5px 0;
+}
+/*endhome*/
+
+/*START ABOUT*/
+
+.title h2{
+    font-size: 6rem;
+    font-weight: 900;
+    color: #f4f4f4;
+    
+  }
+  .title h3{
+    font-size: 3rem;
+    font-weight: 800;
+    color: black;
+    bottom: 10px;
+    
+  }
+  .title h3{
+    position: relative;
+  }
+  .title h3::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    left: 45%;
+    top: 100%;
+    
+  }
+  .progress{
+    height: 5px;
+    animation: progrs 2s alternate ;
+  }
+
+  @keyframes progrs{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+  }
+  /*end about*/
+
+  /*start team*/
+   .imag-team:hover{
+    background-color: var(--rose-color);
+  }
+  
+  .projects h4:hover{
+    color:var(--rose-color);
+
+  }
+ .projects span{
+    color: var(--rose-color);
+    font-size: 25px;
+ }
+ .team .img :hover{
+    transform: scale(1.2);
+ }
+ .team.img :hover{
+    background-color: var(--rose-color);
+ }
+ .team .file :hover{
+color: var(--rose-color);
+ }
+ /*end proj*/
+
+ /*start services*/
+
+ 
+ .clint-img{
+    width: 30%;
+
+ }
+ .carousel-indicators [data-bs-target]
+ {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;
+ }
+ /*start contact*/
+ .blog h4:hover{
+    color: var(--rose-color);
+
+ }
+ .blog span{
+    font-size: 40px;
+    color: var(--rose-color);
+ } 
+ /*start contact*/
+
+ .contact .socal{
+    font-size: 20px;
+ }
+ 
+ 
